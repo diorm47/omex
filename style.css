@@ -78,9 +78,8 @@ header h1 {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   padding: 48px 0;
   margin-bottom: 88px;
 }
@@ -611,7 +610,8 @@ nav {
   position: relative;
 }
 
-.advantages_wrapper, .advantages_title {
+.advantages_wrapper,
+.advantages_title {
   position: relative;
 }
 
