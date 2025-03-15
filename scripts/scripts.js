@@ -1,5 +1,4 @@
 const timer = "05-13-34-12";
-
 const [days, hours, minutes, seconds] = timer.split("-").map(Number);
 let totalSeconds = days * 86400 + hours * 3600 + minutes * 60 + seconds;
 
@@ -21,3 +20,20 @@ function updateTimer() {
 
 setInterval(updateTimer, 1000);
 updateTimer();
+
+// redirecter
+function scrollToTarget(targetId) {
+  const targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: "smooth",
+    });
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (window.location.hash) {
+    scrollToTarget(window.location.hash);
+  }
+});

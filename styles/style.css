@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -49,6 +53,10 @@ body {
   line-height: 21px;
   letter-spacing: 0%;
   text-align: left;
+  cursor: pointer;
+}
+.nav_menu p:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -127,8 +135,16 @@ header h1 {
   line-height: 27px;
   letter-spacing: 0%;
   text-align: center;
+  transition: all 0.4s ease;
 }
-
+.main_btn:hover {
+  background: linear-gradient(
+    270deg,
+    rgb(145, 170, 255),
+    rgb(30, 76, 226) 100%
+  );
+  transition: all 0.4s ease;
+}
 .token_dest {
   padding-top: 96px;
   display: flex;
@@ -480,6 +496,11 @@ header h1 {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+.footer_socials a:hover {
+  background: rgba(255, 255, 255, 0.195);
+  transition: all 0.4s ease;
 }
 
 .btm_footer {
@@ -513,6 +534,9 @@ header h1 {
   margin-bottom: 24px;
 }
 
+.footer_menu a p:hover {
+  text-decoration: underline;
+}
 .footer_menu a {
   display: flex;
   align-items: center;
@@ -597,14 +621,14 @@ nav {
 
 .header_wrapper {
   width: 100%;
-  background: url(./assets/images/header-bg.svg);
+  background: url(../assets/images/header-bg.svg);
   background-position: center;
   background-size: cover;
 }
 
 .whitepaper {
   width: 100%;
-  background: url(./assets/images/whitepaper-bg.svg);
+  background: url(../assets/images/whitepaper-bg.svg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -718,7 +742,6 @@ nav {
 .contacts_card p {
   margin: 0;
 }
-
 
 .page_text ul li {
   color: #fff;
