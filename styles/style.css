@@ -721,7 +721,7 @@ nav {
   margin-top: 40px;
   border-radius: 15px;
   padding: 20px;
-  background: rgba(160, 182, 255, 0.05);
+  background: rgb(32, 34, 38);
 }
 
 .contacts_card_top {
@@ -1149,9 +1149,7 @@ nav {
   .contacts_card p {
     font-size: 16px;
   }
-  .page_content {
-    background: url(../assets/images/header-bg-mob.svg);
-  }
+
   .privacy_page {
     background: none;
   }

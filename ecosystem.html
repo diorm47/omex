@@ -10,7 +10,7 @@
     <nav>
       <div class="nav_wrapper container">
         <a href="./index.html">
-          <img src="./assets/logo.svg" alt="" />
+          <img class="nav_icon" src="./assets/logo.svg" alt="" />
         </a>
         <div class="nav_menu">
           <a href="./index.html"><p>Home</p></a>
@@ -19,7 +19,38 @@
           <a href="index.html#features"> <p>Features</p></a>
           <a href="index.html#whitepaper"><p>Whitepaper</p></a>
         </div>
+
+        <img
+          onclick="toggleMenu()"
+          class="mob_menu_btn"
+          src="./assets/icons/menu.svg"
+          alt=""
+        />
       </div>
+      <div class="mob_menu">
+        <div class="mob_menu_exit">
+          <img
+            onclick="toggleMenu()"
+            src="./assets/icons/close-menu.svg"
+            alt=""
+          />
+        </div>
+        <div class="nav_menu">
+          <a href="./index.html"><p>Home</p></a>
+          <a href="index.html#tokenomiks"> <p>Tokenomiks</p></a>
+          <a href="index.html#roadmap"><p>Road map</p></a>
+          <a href="index.html#features"> <p>Features</p></a>
+          <a href="index.html#whitepaper"><p>Whitepaper</p></a>
+        </div>
+      </div>
+
+      <script>
+        function toggleMenu() {
+          document
+            .querySelector(".mob_menu")
+            .classList.toggle("visible_mob_menu");
+        }
+      </script>
     </nav>
 
     <div class="page_content">
