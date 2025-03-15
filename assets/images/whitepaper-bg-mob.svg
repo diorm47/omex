@@ -1,0 +1,68 @@
+<svg width="478.885620" height="530.171631" viewBox="0 0 478.886 530.172" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_470_dd" x="0.000000" y="30.473145" width="123.011963" height="119.425537" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="3.16865" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_482_dd" x="324.448120" y="360.127686" width="154.437500" height="151.732666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="3.01934" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_485_dd" x="211.955688" y="472.004395" width="57.474365" height="58.167236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="1.16829" result="effect_layerBlur_1"/>
+		</filter>
+		<linearGradient x1="300.005981" y1="387.185791" x2="164.005981" y2="387.185791" id="paint_linear_1_468_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A4B9FF"/>
+			<stop offset="1.000000" stop-color="#4470FE"/>
+		</linearGradient>
+		<radialGradient gradientTransform="rotate(169.417) scale(88.8927 91.0828)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1_473_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A1B7FF"/>
+			<stop offset="1.000000" stop-color="#A1B7FF" stop-opacity="0.000000"/>
+		</radialGradient>
+		<radialGradient gradientTransform="translate(205.999 23.7992) rotate(135) scale(21.9372 21.9372)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1_477_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A0B6FF"/>
+			<stop offset="1.000000" stop-color="#A0B6FF" stop-opacity="0.000000"/>
+		</radialGradient>
+		<radialGradient gradientTransform="translate(10.9308 10.9308) rotate(135) scale(18.6466 18.6466)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1_481_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A0B6FF"/>
+			<stop offset="1.000000" stop-color="#A0B6FF" stop-opacity="0.000000"/>
+		</radialGradient>
+		<radialGradient gradientTransform="translate(464.232 431.416) rotate(135) scale(57.3622 57.3622)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1_484_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A0B6FF"/>
+			<stop offset="1.000000" stop-color="#A0B6FF" stop-opacity="0.000000"/>
+		</radialGradient>
+		<radialGradient gradientTransform="rotate(169.417) scale(32.7749 33.5824)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1_488_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A1B7FF"/>
+			<stop offset="1.000000" stop-color="#A1B7FF" stop-opacity="0.000000"/>
+		</radialGradient>
+		<radialGradient gradientTransform="rotate(169.417) scale(24.2303 24.8273)" cx="0.000000" cy="0.000000" r="1.000000" id="paint_radial_1_492_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#8DA6D9"/>
+			<stop offset="1.000000" stop-color="#8DA6D9" stop-opacity="0.000000"/>
+		</radialGradient>
+	</defs>
+	<g filter="url(#filter_1_470_dd)">
+		<ellipse id="Ellipse 2" rx="5.282894" ry="4.203480" transform="matrix(-0.991732 0.128329 0.128329 0.991732 63.3639 89.9392)" stroke="#9FB6FF" stroke-opacity="1.000000" stroke-width="79.216316"/>
+		<ellipse id="Ellipse 1" rx="5.282894" ry="4.203480" transform="matrix(-0.991732 0.128329 0.128329 0.991732 59.6484 89.9656)" stroke="url(#paint_radial_1_473_0)" stroke-opacity="1.000000" stroke-width="79.216316"/>
+	</g>
+	<rect id="Rectangle 1" x="188.425903" y="11.718262" width="21.432920" height="21.432920" transform="rotate(75 188.425903 11.718262)" stroke="#A0B6FF" stroke-opacity="1.000000" stroke-width="4.286584"/>
+	<rect id="Rectangle 2" x="191.623169" y="13.564453" width="21.432920" height="21.432920" transform="rotate(75 191.623169 13.564453)" stroke="url(#paint_radial_1_477_0)" stroke-opacity="1.000000" stroke-width="4.286584"/>
+	<rect id="Rectangle 1" width="18.217983" height="18.217983" transform="matrix(-0.258819 0.965926 0.965926 0.258819 37.1859 266.582)" stroke="#A0B6FF" stroke-opacity="1.000000" stroke-width="3.643597"/>
+	<rect id="Rectangle 2" width="18.217983" height="18.217983" transform="matrix(-0.258819 0.965926 0.965926 0.258819 34.468 268.151)" stroke="url(#paint_radial_1_481_0)" stroke-opacity="1.000000" stroke-width="3.643597"/>
+	<g filter="url(#filter_1_482_dd)">
+		<rect id="Rectangle 1" x="418.281128" y="399.826904" width="56.043594" height="56.043594" transform="rotate(75 418.281128 399.826904)" stroke="#A0B6FF" stroke-opacity="1.000000" stroke-width="11.208719"/>
+		<rect id="Rectangle 2" x="426.642456" y="404.654053" width="56.043594" height="56.043594" transform="rotate(75 426.642456 404.654053)" stroke="url(#paint_radial_1_484_0)" stroke-opacity="1.000000" stroke-width="11.208719"/>
+	</g>
+	<g filter="url(#filter_1_485_dd)">
+		<ellipse id="Ellipse 2" rx="1.947816" ry="1.549832" transform="matrix(0.359248 0.933242 -0.933242 0.359248 240.371 500.483)" stroke="#9FB6FF" stroke-opacity="1.000000" stroke-width="29.207220"/>
+		<ellipse id="Ellipse 1" rx="1.947816" ry="1.549832" transform="matrix(0.359248 0.933242 -0.933242 0.359248 241.015 501.692)" stroke="url(#paint_radial_1_488_0)" stroke-opacity="1.000000" stroke-width="29.207220"/>
+	</g>
+	<ellipse id="Ellipse 2" rx="8.681486" ry="8.387259" transform="matrix(0.71358 0.700574 -0.700574 0.71358 420.604 274.478)" stroke="#9FB6FF" stroke-opacity="1.000000" stroke-width="7.109783"/>
+	<ellipse id="Ellipse 1" rx="8.681486" ry="8.387259" transform="matrix(0.71358 0.700574 -0.700574 0.71358 421.408 275.095)" stroke="url(#paint_radial_1_492_0)" stroke-opacity="1.000000" stroke-width="7.109783"/>
+</svg>

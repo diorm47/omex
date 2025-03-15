@@ -21,7 +21,8 @@ button {
   transition: all 0.4s ease;
 }
 
-.container {
+.container,
+.container_s {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
@@ -616,7 +617,7 @@ header button,
 header h1,
 nav {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .header_wrapper {
@@ -673,11 +674,6 @@ nav {
   line-height: 140%;
   letter-spacing: 0%;
   text-align: center;
-}
-.container_s {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .page_text p,
@@ -753,4 +749,410 @@ nav {
 }
 .page_text ul li p {
   margin: 0;
+}
+
+.whitepaper_desc {
+  max-width: 830px;
+}
+
+.page_content {
+  background: url(../assets/images/header-bg.svg);
+  background-position: center;
+}
+.privacy_page {
+  background: none;
+}
+
+.inv_cards .advantage_cards_col:nth-child(2) {
+  padding: 0;
+}
+.inv_cards {
+  align-items: center;
+}
+
+.discord .main_btn {
+  color: rgb(4, 7, 14);
+}
+
+.mob_menu_btn {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.mob_menu {
+  background: rgb(6, 9, 18);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 65%;
+  z-index: 111;
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.visible_mob_menu {
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
+.mob_menu_exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-top: 35px;
+  margin-bottom: 36px;
+}
+.mob_menu .nav_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  padding-left: 24px;
+}
+nav {
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .token_dest {
+    flex-direction: column;
+  }
+  .token_left,
+  .token_right {
+    width: 100%;
+  }
+  .roadmap_cards {
+    width: 1250px;
+  }
+  .roadmap_wrapper {
+    overflow: auto;
+  }
+  .adv_overlay {
+    width: 70%;
+    left: 0;
+    top: 0;
+  }
+  .advantages {
+    flex-direction: column;
+  }
+  .advantages_title h2,
+  .advantages_title p {
+    text-align: center;
+  }
+  .btm_footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .discord {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mob_menu_btn {
+    display: flex;
+  }
+  .nav_menu p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .nav_wrapper .nav_menu {
+    display: none;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav_icon {
+    width: 50px;
+  }
+  .header_overlay {
+    width: 300%;
+  }
+  header h1 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0 5px;
+    margin-bottom: 32px;
+  }
+
+  .header_timer {
+    padding: 24px;
+    border-radius: 1000px;
+  }
+  .timer_value p {
+    color: rgb(160, 182, 255);
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .timer_value span {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .timer_value {
+    gap: 0;
+  }
+
+  .main_btn {
+    border-radius: 100px;
+    padding: 24px 32px 24px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  .header_timer {
+    margin-bottom: 72px;
+  }
+  header {
+    padding-bottom: 137px;
+  }
+  .token_dest {
+    padding-top: 40px;
+  }
+
+  header {
+    background: url(../assets/images/header-bg-mob.svg);
+    background-position: center;
+  }
+  .main_btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 56px;
+  }
+  .token_left,
+  .token_right {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .token_logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .token_right {
+    gap: 16px;
+  }
+  .token_right_desc {
+    padding: 24px;
+  }
+  .token_right_desc div {
+    flex-direction: column;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    gap: 8px;
+  }
+  .token_right_desc h5 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .token_right_desc p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .token_right .main_btn {
+    margin-top: 8px;
+  }
+  h2,
+  .omex_roadmap h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .roadmap_card_desc {
+    padding: 24px;
+  }
+  .roadmap_card_desc h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .advantages {
+    padding-top: 96px;
+  }
+  .advantages_title h2,
+  .whitepaper h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .advantages_title p,
+  .whitepaper p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .advantage_cards {
+    flex-direction: column;
+    gap: 0;
+  }
+  .advantage_cards_col {
+    width: 100%;
+    padding-top: 0 !important;
+  }
+  .advantage_card {
+    margin-bottom: 16px;
+  }
+  .adv_overlay {
+    width: 100%;
+    transform: scale(2.5);
+    left: 0;
+    top: 0;
+  }
+  .whitepaper {
+    padding-top: 112px;
+    padding-bottom: 111px;
+    margin-bottom: 42px;
+  }
+  br {
+    display: none;
+  }
+
+  .whitepaper {
+    width: 100%;
+    background: url(../assets/images/whitepaper-bg-mob.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footer_logo {
+    width: 58px;
+  }
+  .footer_socials a {
+    border-radius: 5.33px;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .footer_socials img {
+    width: 16px;
+    height: 16px;
+  }
+  .footer_socials {
+    gap: 8px;
+  }
+  .btm_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 10px;
+  }
+  .footer_menu h4 {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  .footer_menu p {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+  .footer_emails a {
+    margin-bottom: 18px;
+  }
+  .discord {
+    height: auto;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .discord h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .copyright {
+    padding: 16px 0;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+
+  .page_content {
+    padding: 50px 0;
+  }
+  .page_content h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .page_content_title h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .page_content_title {
+    margin-bottom: 30px;
+  }
+  .ecosystem_cards {
+    margin-bottom: 24px;
+  }
+  .page_text p,
+  .contacts_card p {
+    font-size: 16px;
+  }
+  .page_content {
+    background: url(../assets/images/header-bg-mob.svg);
+  }
+  .privacy_page {
+    background: none;
+  }
 }

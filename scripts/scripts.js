@@ -37,3 +37,15 @@ window.addEventListener("DOMContentLoaded", () => {
     scrollToTarget(window.location.hash);
   }
 });
+
+const diagram = {
+  team: "10",
+  liqudity: '32'
+};
+
+
+
+// 
+// sessionStorage.setItem("timer", snapshot.val().timer);
+// document.querySelector(".whitepaper_desc").innerText =
+//   snapshot.val().whitepaper_text;

@@ -12,7 +12,7 @@
         <nav>
           <div class="nav_wrapper container">
             <a href="./index.html">
-              <img src="./assets/logo.svg" alt="" />
+              <img class="nav_icon" src="./assets/logo.svg" alt="" />
             </a>
             <div class="nav_menu">
               <a href="./index.html"><p>Home</p></a>
@@ -21,7 +21,38 @@
               <a href="index.html#features"> <p>Features</p></a>
               <a href="index.html#whitepaper"><p>Whitepaper</p></a>
             </div>
+
+            <img
+              onclick="toggleMenu()"
+              class="mob_menu_btn"
+              src="./assets/icons/menu.svg"
+              alt=""
+            />
           </div>
+          <div class="mob_menu">
+            <div class="mob_menu_exit">
+              <img
+                onclick="toggleMenu()"
+                src="./assets/icons/close-menu.svg"
+                alt=""
+              />
+            </div>
+            <div class="nav_menu">
+              <a href="./index.html"><p>Home</p></a>
+              <a href="index.html#tokenomiks"> <p>Tokenomiks</p></a>
+              <a href="index.html#roadmap"><p>Road map</p></a>
+              <a href="index.html#features"> <p>Features</p></a>
+              <a href="index.html#whitepaper"><p>Whitepaper</p></a>
+            </div>
+          </div>
+
+          <script>
+            function toggleMenu() {
+              document
+                .querySelector(".mob_menu")
+                .classList.toggle("visible_mob_menu");
+            }
+          </script>
         </nav>
 
         <header class="container">
@@ -55,42 +86,42 @@
             <div>
               <img src="./assets/icons/diagram/1.svg" alt="" />
               <p>Team</p>
-              <span style="color: rgb(255, 81, 0)">10%</span>
+              <span style="color: rgb(255, 81, 0)"></span>
             </div>
             <div>
               <img src="./assets/icons/diagram/2.svg" alt="" />
               <p>Staking&Revards</p>
-              <span style="color: rgb(254, 1, 162)"> 20%</span>
+              <span style="color: rgb(254, 1, 162)"> </span>
             </div>
             <div>
               <img src="./assets/icons/diagram/3.svg" alt="" />
               <p>Liquidity</p>
-              <span style="color: rgb(145, 1, 254)">10% </span>
+              <span style="color: rgb(145, 1, 254)"></span>
             </div>
             <div>
               <img src="./assets/icons/diagram/4.svg" alt="" />
               <p>Partnerships & Cooperation</p>
-              <span style="color: rgb(68, 112, 254)">5% </span>
+              <span style="color: rgb(68, 112, 254)"></span>
             </div>
             <div>
               <img src="./assets/icons/diagram/5.svg" alt="" />
               <p>Marketing & Communit</p>
-              <span style="color: rgb(5, 254, 117)">5% </span>
+              <span style="color: rgb(5, 254, 117)"> </span>
             </div>
             <div>
               <img src="./assets/icons/diagram/6.svg" alt="" />
               <p>Airdrop</p>
-              <span style="color: rgb(251, 254, 68)">20% </span>
+              <span style="color: rgb(251, 254, 68)"></span>
             </div>
             <div>
               <img src="./assets/icons/diagram/7.svg" alt="" />
               <p>Pre-Sale</p>
-              <span style="color: rgb(0, 232, 170)">10% </span>
+              <span style="color: rgb(0, 232, 170)"></span>
             </div>
             <div>
               <img src="./assets/icons/diagram/8.svg" alt="" />
               <p>Ecosystem Fund</p>
-              <span style="color: rgb(254, 74, 68)">20% </span>
+              <span style="color: rgb(254, 74, 68)"></span>
             </div>
           </div>
           <img class="diagram" src="./assets/images/diagram.png" alt="" />
@@ -120,194 +151,199 @@
         </div>
       </div>
 
-      <div id="roadmap" class="omex_roadmap container">
-        <h2>OmexETH Roadmap</h2>
+      <div id="roadmap" class="roadmap_wrapper container">
+        <div class="omex_roadmap">
+          <h2>OmexETH Roadmap</h2>
 
-        <div class="roadmap_cards">
-          <div class="roadmap_card">
-            <div class="roadmap_card_title">
-              <p>Q1 2025</p>
-              <div></div>
-            </div>
+          <div class="roadmap_cards">
+            <div class="roadmap_card">
+              <div class="roadmap_card_title">
+                <p>Q1 2025</p>
+                <div></div>
+              </div>
 
-            <div class="roadmap_card_desc">
-              <h4>Launch and Foundation</h4>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Smart Contract Development and Audit</p>
-                  <span
-                    >Creation, testing, and security audit of the token.</span
-                  >
+              <div class="roadmap_card_desc">
+                <h4>Launch and Foundation</h4>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Smart Contract Development and Audit</p>
+                    <span
+                      >Creation, testing, and security audit of the token.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Listing on Top DEX</p>
-                  <span
-                    >Launch of trading on Uniswap and ensuring liquidity.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Listing on Top DEX</p>
+                    <span
+                      >Launch of trading on Uniswap and ensuring
+                      liquidity.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Integration into OmexAI</p>
-                  <span>Connecting OmexETH as a payment method.</span>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Integration into OmexAI</p>
+                    <span>Connecting OmexETH as a payment method.</span>
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Marketing and Community</p>
-                  <span
-                    >Developing a website, launching social media channels, and
-                    initiating the first marketing campaign.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Marketing and Community</p>
+                    <span
+                      >Developing a website, launching social media channels,
+                      and initiating the first marketing campaign.</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="roadmap_card">
-            <div class="roadmap_card_title">
-              <p>Q2 2025</p>
-              <div></div>
-            </div>
+            <div class="roadmap_card">
+              <div class="roadmap_card_title">
+                <p>Q2 2025</p>
+                <div></div>
+              </div>
 
-            <div class="roadmap_card_desc">
-              <h4>Expansion and Functionality</h4>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Additional Listings</p>
-                  <span
-                    >Expanding to new DEX platforms, and registering on
-                    CoinMarketCap and CoinGecko.</span
-                  >
+              <div class="roadmap_card_desc">
+                <h4>Expansion and Functionality</h4>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Additional Listings</p>
+                    <span
+                      >Expanding to new DEX platforms, and registering on
+                      CoinMarketCap and CoinGecko.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Staking Launch</p>
-                  <span
-                    >Implementing a passive income mechanism for token
-                    holders.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Staking Launch</p>
+                    <span
+                      >Implementing a passive income mechanism for token
+                      holders.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Dividend Payout Launch</p>
-                  <span
-                    >OmexETH holders receive a share of the platform’s
-                    revenues.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Dividend Payout Launch</p>
+                    <span
+                      >OmexETH holders receive a share of the platform’s
+                      revenues.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>DeFi Partnerships</p>
-                  <span>Integrating with liquidity and lending protocols.</span>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>DeFi Partnerships</p>
+                    <span
+                      >Integrating with liquidity and lending protocols.</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="roadmap_card">
-            <div class="roadmap_card_title">
-              <p>Q3 2025</p>
-              <div></div>
-            </div>
+            <div class="roadmap_card">
+              <div class="roadmap_card_title">
+                <p>Q3 2025</p>
+                <div></div>
+              </div>
 
-            <div class="roadmap_card_desc">
-              <h4>Strengthening the Ecosystem</h4>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Loyalty Programs</p>
-                  <span
-                    >Offering discounts and bonuses for using OmexETH on
-                    OmexAI.</span
-                  >
+              <div class="roadmap_card_desc">
+                <h4>Strengthening the Ecosystem</h4>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Loyalty Programs</p>
+                    <span
+                      >Offering discounts and bonuses for using OmexETH on
+                      OmexAI.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Staking Optimization</p>
-                  <span>Enhancing reward conditions and interest rates.</span>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Staking Optimization</p>
+                    <span>Enhancing reward conditions and interest rates.</span>
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Listing on CEX</p>
-                  <span
-                    >Efforts to secure placements on centralized
-                    exchanges.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Listing on CEX</p>
+                    <span
+                      >Efforts to secure placements on centralized
+                      exchanges.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Global Promotion</p>
-                  <span
-                    >Expanding marketing efforts, targeting new regions, and
-                    forming strategic partnerships.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Global Promotion</p>
+                    <span
+                      >Expanding marketing efforts, targeting new regions, and
+                      forming strategic partnerships.</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="roadmap_card">
-            <div class="roadmap_card_title">
-              <p>Q4 2025</p>
-              <div></div>
-            </div>
+            <div class="roadmap_card">
+              <div class="roadmap_card_title">
+                <p>Q4 2025</p>
+                <div></div>
+              </div>
 
-            <div class="roadmap_card_desc">
-              <h4>Scaling and New Horizons</h4>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Multi-chain Integration</p>
-                  <span
-                    >Launching OmexETH on BSC, Polygon, and other
-                    blockchains.</span
-                  >
+              <div class="roadmap_card_desc">
+                <h4>Scaling and New Horizons</h4>
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Multi-chain Integration</p>
+                    <span
+                      >Launching OmexETH on BSC, Polygon, and other
+                      blockchains.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>DAO and Decentralized Governance</p>
-                  <span
-                    >Implementing a voting mechanism for token holders.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>DAO and Decentralized Governance</p>
+                    <span
+                      >Implementing a voting mechanism for token holders.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Expansion of Token Utility</p>
-                  <span
-                    >Introducing new use cases, including NFT and GameFi
-                    integrations.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Expansion of Token Utility</p>
+                    <span
+                      >Introducing new use cases, including NFT and GameFi
+                      integrations.</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="roadmap_card_desc_item">
-                <img src="./assets/icons/diagram/4.svg" alt="" />
-                <div>
-                  <p>Annual Report and Strategy Update</p>
-                  <span
-                    >Reviewing progress and planning the next phase of
-                    development.</span
-                  >
+                <div class="roadmap_card_desc_item">
+                  <img src="./assets/icons/diagram/4.svg" alt="" />
+                  <div>
+                    <p>Annual Report and Strategy Update</p>
+                    <span
+                      >Reviewing progress and planning the next phase of
+                      development.</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,11 +414,13 @@
 
       <div id="whitepaper" class="whitepaper">
         <h2>Whitepaper</h2>
-        <p>
+
+        <p class="whitepaper_desc">
           Explore the comprehensive project documentation, technical details,
           and analytical <br />
           reports to again a deeper understanding of the value of OmexETH.
         </p>
+
         <button class="main_btn">Download</button>
       </div>
 
@@ -390,7 +428,7 @@
         <div class="footer_top">
           <div class="container footer_top_w">
             <a href="./index.html">
-              <img src="./assets/logo.svg" alt="" />
+              <img class="footer_logo" src="./assets/logo.svg" alt="" />
             </a>
             <div class="footer_socials">
               <a href="#">
@@ -451,5 +489,7 @@
       </footer>
     </div>
     <script src="./scripts/scripts.js"></script>
+
+    <!-- <script type="module" src="./scripts/diagram.js"></script> -->
   </body>
 </html>
