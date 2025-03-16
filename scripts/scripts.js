@@ -1,25 +1,97 @@
-const timer = "05-13-34-12";
-const [days, hours, minutes, seconds] = timer.split("-").map(Number);
-let totalSeconds = days * 86400 + hours * 3600 + minutes * 60 + seconds;
+const getData = async () => {
+  try {
+    let headersList = {
+      Accept: "*/*",
+    };
 
-function updateTimer() {
-  if (totalSeconds <= 0) return;
-  totalSeconds--;
+    let response = await fetch("http://localhost:3001/datas", {
+      method: "GET",
+      headers: headersList,
+    });
 
-  const d = Math.floor(totalSeconds / 86400);
-  const h = Math.floor((totalSeconds % 86400) / 3600);
-  const m = Math.floor((totalSeconds % 3600) / 60);
-  const s = totalSeconds % 60;
+    if (!response.ok) {
+      throw new Error(`Ошибка HTTP: ${response.status}`);
+    }
 
-  const timerValues = document.querySelectorAll(".timer_value p");
-  timerValues[0].textContent = d.toString().padStart(2, "0");
-  timerValues[1].textContent = h.toString().padStart(2, "0");
-  timerValues[2].textContent = m.toString().padStart(2, "0");
-  timerValues[3].textContent = s.toString().padStart(2, "0");
+    let res = await response.json();
+    const data = res[0];
+
+    document.querySelector(".whitepaper_desc").innerText = data.whitepaper_text;
+    document.querySelectorAll(".whitepaper_btn").forEach((btn) => {
+      btn.href = data.whitepaper_link;
+    });
+    document.querySelector(".token_btn").href = data.tokenomics_link;
+
+    fetchDiagramData(data.token);
+
+    startTimer(data.timer);
+  } catch (error) {
+    console.error("Ошибка запроса:", error);
+  }
+};
+getData();
+
+// timer
+function startTimer(timer) {
+  const [days, hours, minutes, seconds] = timer.split(":").map(Number);
+  let totalSeconds = days * 86400 + hours * 3600 + minutes * 60 + seconds;
+
+  function updateTimer() {
+    if (totalSeconds <= 0) {
+      clearInterval(timerInterval);
+      return;
+    }
+
+    totalSeconds--;
+
+    const d = Math.floor(totalSeconds / 86400);
+    const h = Math.floor((totalSeconds % 86400) / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
+
+    const timerValues = document.querySelectorAll(".timer_value p");
+    timerValues[0].textContent = d.toString().padStart(2, "0");
+    timerValues[1].textContent = h.toString().padStart(2, "0");
+    timerValues[2].textContent = m.toString().padStart(2, "0");
+    timerValues[3].textContent = s.toString().padStart(2, "0");
+  }
+
+  // Запускаем обновление каждую секунду
+  const timerInterval = setInterval(updateTimer, 1000);
+  updateTimer();
 }
 
-setInterval(updateTimer, 1000);
-updateTimer();
+// diagramm data
+function fetchDiagramData(diagramData) {
+  if (diagramData) {
+    if (typeof diagramData === "string") {
+      diagramData = JSON.parse(diagramData);
+    }
+
+    const mapping = [
+      { key: "team", selector: ".diagram_desc div:nth-child(1) span" },
+      { key: "staking", selector: ".diagram_desc div:nth-child(2) span" },
+      { key: "liquidity", selector: ".diagram_desc div:nth-child(3) span" },
+      {
+        key: "partnerships",
+        selector: ".diagram_desc div:nth-child(4) span",
+      },
+      { key: "marketing", selector: ".diagram_desc div:nth-child(5) span" },
+      { key: "airdrop", selector: ".diagram_desc div:nth-child(6) span" },
+      { key: "presale", selector: ".diagram_desc div:nth-child(7) span" },
+      { key: "ecosystem", selector: ".diagram_desc div:nth-child(8) span" },
+    ];
+
+    mapping.forEach(({ key, selector }) => {
+      const element = document.querySelector(selector);
+      if (element && diagramData[key] !== undefined) {
+        element.innerText = `${diagramData[key]}%`;
+      }
+    });
+  } else {
+    console.log("Нет данных!");
+  }
+}
 
 // redirecter
 function scrollToTarget(targetId) {
@@ -31,21 +103,8 @@ function scrollToTarget(targetId) {
     });
   }
 }
-
 window.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash) {
     scrollToTarget(window.location.hash);
   }
 });
-
-const diagram = {
-  team: "10",
-  liqudity: '32'
-};
-
-
-
-// 
-// sessionStorage.setItem("timer", snapshot.val().timer);
-// document.querySelector(".whitepaper_desc").innerText =
-//   snapshot.val().whitepaper_text;
