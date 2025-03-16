@@ -256,11 +256,14 @@ header h1 {
   text-align: right;
 }
 
-.omex_roadmap {
+.roadmap_wrapper  {
   margin-top: 118px;
 }
+.omex_roadmap {
+  width: 100%;
+}
 
-.omex_roadmap h2 {
+.roadmap_wrapper h2 {
   color: rgb(255, 255, 255);
   font-family: Poppins;
   font-size: 48px;
@@ -831,8 +834,10 @@ nav {
   }
   .roadmap_cards {
     width: 1250px;
+    position: relative;
+    z-index: 2;
   }
-  .roadmap_wrapper {
+  .omex_roadmap {
     overflow: auto;
   }
   .adv_overlay {
@@ -856,6 +861,7 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
+  
   .mob_menu_btn {
     display: flex;
   }
@@ -987,7 +993,7 @@ nav {
     margin-top: 8px;
   }
   h2,
-  .omex_roadmap h2 {
+  .roadmap_wrapper h2 {
     color: rgb(255, 255, 255);
     font-family: Poppins;
     font-size: 32px;
