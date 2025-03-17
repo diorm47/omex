@@ -4,10 +4,13 @@ const getData = async () => {
       Accept: "*/*",
     };
 
-    let response = await fetch("http://localhost:3001/datas", {
-      method: "GET",
-      headers: headersList,
-    });
+    let response = await fetch(
+      "https://omex-backend-production.up.railway.app/datas",
+      {
+        method: "GET",
+        headers: headersList,
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Ошибка HTTP: ${response.status}`);
@@ -18,9 +21,12 @@ const getData = async () => {
 
     document.querySelector(".whitepaper_desc").innerText = data.whitepaper_text;
     document.querySelectorAll(".whitepaper_btn").forEach((btn) => {
-      btn.href = data.whitepaper_link;
+      btn.href = `https://omex-backend-production.up.railway.app${data.whitepaper_link}`;
     });
-    document.querySelector(".token_btn").href = data.tokenomics_link;
+
+    document.querySelector(
+      ".token_btn"
+    ).href = `https://omex-backend-production.up.railway.app${data.tokenomics_link}`;
 
     fetchDiagramData(data.token);
 
