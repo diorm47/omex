@@ -259,7 +259,7 @@ header h1 {
 .roadmap_wrapper  {
   margin-top: 118px;
 }
-.omex_roadmap {
+.roadmap_cards {
   width: 100%;
 }
 
@@ -274,11 +274,11 @@ header h1 {
   margin-bottom: 48px;
 }
 
-.roadmap_cards {
+/* .roadmap_cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-}
+} */
 
 .roadmap_card_title p {
   color: rgb(68, 112, 254);
@@ -490,6 +490,9 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.footer_socials img {
+  width: 24px;
 }
 
 .footer_socials a {
@@ -833,13 +836,10 @@ nav {
     width: 100%;
   }
   .roadmap_cards {
-    width: 1250px;
-    position: relative;
-    z-index: 2;
+  width: 100%;
+
   }
-  .omex_roadmap {
-    overflow: auto;
-  }
+
   .adv_overlay {
     width: 70%;
     left: 0;
@@ -861,7 +861,9 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
-  
+  .roadmap_card {
+    width: 100%;
+  }
   .mob_menu_btn {
     display: flex;
   }
@@ -1158,5 +1160,8 @@ nav {
 
   .privacy_page {
     background: none;
+  }
+  .roadmap_card {
+    width: 100%;
   }
 }

@@ -75,17 +75,17 @@ function fetchDiagramData(diagramData) {
     }
 
     const mapping = [
-      { key: "team", selector: ".diagram_desc div:nth-child(1) span" },
-      { key: "staking", selector: ".diagram_desc div:nth-child(2) span" },
-      { key: "liquidity", selector: ".diagram_desc div:nth-child(3) span" },
+      { key: "community", selector: ".diagram_desc div:nth-child(1) span" },
+      { key: "ecosystem", selector: ".diagram_desc div:nth-child(2) span" },
+      { key: "team", selector: ".diagram_desc div:nth-child(3) span" },
       {
-        key: "partnerships",
+        key: "advisors",
         selector: ".diagram_desc div:nth-child(4) span",
       },
-      { key: "marketing", selector: ".diagram_desc div:nth-child(5) span" },
-      { key: "airdrop", selector: ".diagram_desc div:nth-child(6) span" },
-      { key: "presale", selector: ".diagram_desc div:nth-child(7) span" },
-      { key: "ecosystem", selector: ".diagram_desc div:nth-child(8) span" },
+      { key: "seed", selector: ".diagram_desc div:nth-child(5) span" },
+      { key: "ido", selector: ".diagram_desc div:nth-child(6) span" },
+      { key: "liquidity", selector: ".diagram_desc div:nth-child(7) span" },
+    
     ];
 
     mapping.forEach(({ key, selector }) => {
