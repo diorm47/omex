@@ -256,7 +256,7 @@ header h1 {
   text-align: right;
 }
 
-.roadmap_wrapper  {
+.roadmap_wrapper {
   margin-top: 118px;
 }
 .roadmap_cards {
@@ -434,6 +434,13 @@ header h1 {
   line-height: 21px;
   letter-spacing: 0%;
   text-align: left;
+  opacity: 0.7;
+}
+.advantage_card_wrapper ul {
+  padding-left: 20px;
+}
+.advantage_card_wrapper li {
+  color: rgb(255, 255, 255);
   opacity: 0.7;
 }
 
@@ -694,6 +701,13 @@ nav {
   margin-bottom: 4px;
   margin-bottom: 24px;
 }
+.page_text h3 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 
 .page_text p span,
 .contacts_card p span {
@@ -820,6 +834,40 @@ nav {
   position: relative;
   z-index: 1;
 }
+
+.text_table {
+  max-width: 100%;
+  width: 100%;
+  /* padding: 20px; */
+  border-radius: 20px;
+  border-collapse: collapse;
+
+  background: rgba(160, 182, 255, 0.05);
+}
+
+.text_table td {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 15px;
+  border: 1px solid rgba(133, 131, 131, 0.512)
+}
+.text_table thead td {
+  opacity: 0.7;
+  font-weight: 500;
+}
+.page_text {
+  margin-bottom: 40px;
+}
+.page_text ul  {
+  padding-left: 20px;
+}
+.tac {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1300px) {
   .container {
     padding-left: 20px;
@@ -836,8 +884,7 @@ nav {
     width: 100%;
   }
   .roadmap_cards {
-  width: 100%;
-
+    width: 100%;
   }
 
   .adv_overlay {
@@ -861,6 +908,17 @@ nav {
 }
 
 @media only screen and (max-width: 500px) {
+  .text_table_w {
+    overflow: auto;
+    width: 100%;
+  }
+  .text_table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .about_table {
+    width: 600px;
+  }
   .roadmap_card {
     width: 100%;
   }
