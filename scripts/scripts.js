@@ -5,7 +5,7 @@ const getData = async () => {
     };
 
     let response = await fetch(
-      "https://omex-backend-production.up.railway.app/datas",
+      "https://api-omex.omexeth.io/datas",
       {
         method: "GET",
         headers: headersList,
@@ -21,12 +21,12 @@ const getData = async () => {
 
     document.querySelector(".whitepaper_desc").innerText = data.whitepaper_text;
     document.querySelectorAll(".whitepaper_btn").forEach((btn) => {
-      btn.href = `https://omex-backend-production.up.railway.app${data.whitepaper_link}`;
+      btn.href = `https://api-omex.omexeth.io${data.whitepaper_link}`;
     });
 
     document.querySelector(
       ".token_btn"
-    ).href = `https://omex-backend-production.up.railway.app${data.tokenomics_link}`;
+    ).href = `https://api-omex.omexeth.io${data.tokenomics_link}`;
 
     fetchDiagramData(data.token);
 
